@@ -4,7 +4,7 @@ This is a starter Flutter/Dart app to get an Adafruit Clue and a mobile device p
 
 It uses the [flutter_blue](https://pub.dev/packages/flutter_blue) plugin. I have an Android device so did not set up permissions for iOS, directions on how to do that are on the pub.dev page.
 
-The [UART Serivce](https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/uart-service), documented by Adafruit, is used to pass strings between the devices. The app main screen has three buttons: Connect, Disconnect and Send Text. When the devices are connected the Send Text button will send the string "Goodnight Moon" to the Clue. A CircuitPython program running on the Clue echos the message to the device with the count of how many messages it has received since the last connection.
+The [UART Serivce](https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/uart-service), documented by Adafruit, is used to pass strings between the devices. The app home screen has three buttons: Connect, Disconnect and Send Text. When the devices are connected the Send Text button will send the string "Goodnight Moon" to the Clue. A CircuitPython program running on the Clue echos the message to the device with the count of how many messages it has received since the last connection.
 
 When I plugged in my Clue it advertised as CIRCUITPYbc57. Not sure if they are all the same but the advertising name is at the top of main.dart. Load the following CircuitPython program on the Clue and you should be able to communicate with this app.
 

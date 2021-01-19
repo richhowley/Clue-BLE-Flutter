@@ -6,7 +6,9 @@ It uses the [flutter_blue](https://pub.dev/packages/flutter_blue) plugin. I have
 
 The [UART Serivce](https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/uart-service), documented by Adafruit, is used to pass strings between the devices. The app home screen has three buttons: Connect, Disconnect and Send Text. When the devices are connected the Send Text button will send the string "Goodnight Moon" to the Clue. A CircuitPython program running on the Clue echos the message to the mobile device along with the count of how many messages it has received since the last connection.
 
-When I plugged in my Clue it advertised as CIRCUITPYbc57. Not sure if they are all the same but the advertising name is defined at the top of main.dart and can be changed if necessary. Load the following CircuitPython program on the Clue and you should be able to communicate with this app.
+When I plugged in my Clue it advertised as CIRCUITPYbc57. Not sure if they are all the same but the advertising name is defined at the top of main.dart and can be changed if necessary. 
+
+Load the following CircuitPython program on the Clue and you should be able to communicate with this app.
 
 ```
 from adafruit_ble import BLERadio

@@ -32,7 +32,7 @@ while True:
     
     print("Clue connected.");
     
-    msg_count = 0; # messages recieved
+    msg_count = 0; # of messages recieved
 
     while ble.connected:
         
@@ -42,10 +42,10 @@ while True:
         # if UART has bytes waiting
         if in_cnt:
         
-            # read message serial port
+            # read message 
             rxbuf = uart.read(in_cnt)
         
-            #  print it
+            #  print it to serial port
             print(rxbuf)
             
             # increment count
@@ -55,5 +55,5 @@ while True:
             uart.write("{msg} ({count})".format(msg=rxbuf.decode(),count = msg_count))
           
     print("Clue disconnected")
-    
+   
     ```

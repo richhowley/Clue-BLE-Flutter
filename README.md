@@ -1,6 +1,6 @@
 # Clue BLE Flutter/Dart App
 
-This is a starter Flutter/Dart app to get an Adafruit Clue and a mobile device performing bidirectional communication via BLE. 
+This is an Android Studio project for a starter Flutter/Dart app to get an Adafruit Clue and a mobile device performing bidirectional communication via BLE. 
 
 It uses the [flutter_blue](https://pub.dev/packages/flutter_blue) plugin. I have an Android device so did not set up permissions for iOS, directions on how to do that are on the pub.dev page.
 
